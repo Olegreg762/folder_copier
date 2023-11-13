@@ -10,6 +10,7 @@ def copy_folders(source_folder, target_folder, folder_name):
             if os.path.exists(target_path):
                 shutil.rmtree(target_path)
             shutil.copytree(source_path, target_path)
+            count += 1
     print(f'{count+1} Folders copied')
 
 # Replace 'source_path' with the folder to searched
